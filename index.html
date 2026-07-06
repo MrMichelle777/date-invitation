@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Екатерина, одно приглашение</title>
+    <meta
+      name="description"
+      content="Небольшое интерактивное приглашение на свидание для Екатерины."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=10" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero panel active" id="places" aria-labelledby="places-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-shade"></div>
+
+        <nav class="topbar" aria-label="Разделы приглашения">
+          <a class="brand" href="#places">Для Екатерины</a>
+          <div class="nav-links">
+            <a href="#places">Куда идем</a>
+            <a href="#about">Почему со мной</a>
+            <a href="#compliments">Про тебя</a>
+          </div>
+        </nav>
+
+        <div class="hero-content">
+          <p class="eyebrow">случайная встреча, которую хочется продолжить</p>
+          <h1 id="places-title">Екатерина, выбери наше первое свидание</h1>
+          <p class="lead">
+            Если вдруг мое предложение с сап-доской тебе не очень нравится,
+            предлагаю тебе следующие варианты. Нажми на тот, который откликается
+            больше всего, а в конце можно будет красиво сказать «да».
+          </p>
+        </div>
+
+        <div class="date-grid" aria-label="Варианты свидания">
+          <button class="date-card selected" type="button" data-place="Ресторан">
+            <span class="card-icon">01</span>
+            <strong>Ресторан</strong>
+            <small>спокойный вечер, вкусная еда и разговор без спешки</small>
+          </button>
+          <button class="date-card" type="button" data-place="Картинг">
+            <span class="card-icon">02</span>
+            <strong>Картинг</strong>
+            <small>немного скорости, смеха и честная гонка за первое место</small>
+          </button>
+          <button class="date-card" type="button" data-place="Останкинская башня">
+            <span class="card-icon">03</span>
+            <strong>Останкинская башня</strong>
+            <small>посмотреть на город сверху и выбрать любимый огонек</small>
+          </button>
+          <button class="date-card" type="button" data-place="Тренировка в спортзале">
+            <span class="card-icon">04</span>
+            <strong>Тренировка в спортзале</strong>
+            <small>кардио и кач, а потом баня и бассейн</small>
+          </button>
+          <button class="date-card" type="button" data-place="Кино на крыше">
+            <span class="card-icon">05</span>
+            <strong>Кино на крыше</strong>
+            <small>вечерний город, фильм и нормальный повод сидеть рядом</small>
+          </button>
+          <button class="date-card" type="button" data-place="Стендап + джаз">
+            <span class="card-icon">06</span>
+            <strong>Стендап + джаз</strong>
+            <small>сначала смеемся, потом делаем вид, что разбираемся в джазе</small>
+          </button>
+          <button class="date-card" type="button" data-place="Поход в зоопарк">
+            <span class="card-icon">07</span>
+            <strong>Поход в зоопарк</strong>
+            <small>посмотреть на зверушек</small>
+          </button>
+          <button class="date-card" type="button" data-place="Заплыв на сап-доске">
+            <span class="card-icon">08</span>
+            <strong>Заплыв на сап-доске</strong>
+            <small>вода, баланс и шанс героически не упасть</small>
+          </button>
+          <button class="date-card" type="button" data-place="Органный концерт">
+            <span class="card-icon">09</span>
+            <strong>Органный концерт</strong>
+            <small>красиво, необычно и с серьезным вайбом</small>
+          </button>
+          <button class="date-card" type="button" data-place="Джазовый вечер">
+            <span class="card-icon">10</span>
+            <strong>Джазовый вечер</strong>
+            <small>музыка, огни и разговоры между композициями</small>
+          </button>
+          <button class="date-card" type="button" data-place="Аквапарк">
+            <span class="card-icon">11</span>
+            <strong>Аквапарк</strong>
+            <small>если хочется без официоза и с хорошим настроением</small>
+          </button>
+          <button class="date-card" type="button" data-place="Прогулка в Парке Горького">
+            <span class="card-icon">12</span>
+            <strong>Прогулка в Парке Горького</strong>
+            <small>пройтись, поговорить и поймать хороший московский вечер</small>
+          </button>
+        </div>
+
+        <button class="next-button" type="button" data-next="#about">
+          Дальше
+          <span aria-hidden="true">→</span>
+        </button>
+      </section>
+
+      <section class="panel about" id="about" aria-labelledby="about-title">
+        <div class="section-inner">
+          <p class="eyebrow">короткая презентация кандидата</p>
+          <h2 id="about-title">Почему именно со мной</h2>
+          <div class="about-layout">
+            <div class="about-letter">
+              <span class="about-kicker">заявка на победу в гонке</span>
+              <p class="about-intro">
+                Кать, я понимаю, что к тебе подходят знакомиться многие и ты
+                очень деловая и занятая. А уж тем более я просто незнакомый
+                человек с улицы. Но именно я должен выиграть эту гонку, поэтому
+                небольшая презентация о себе.
+              </p>
+              <p class="postscript">
+                P.S. Не уезжай в Камбоджу, пойдем лучше со мной!
+              </p>
+            </div>
+            <div class="about-resume" aria-label="Факты обо мне">
+              <ul class="about-facts">
+                <li><span>спорт</span>КМС по боксу</li>
+                <li><span>опыт</span>служил в ВДВ</li>
+                <li><span>работа</span>работаю в строительно-энергетической компании, тем более с тобой в одном районе :)</li>
+                <li><span>режим</span>с нескучным подходом к жизни</li>
+                <li><span>бонус</span>и, конечно же, очень скромный)))</li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel-actions">
+            <button class="ghost-button" type="button" data-next="#places">Назад</button>
+            <button class="next-button inline" type="button" data-next="#compliments">
+              Еще чуть-чуть
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel compliments" id="compliments" aria-labelledby="compliments-title">
+        <div class="section-inner">
+          <p class="eyebrow">и немного того, что невозможно не заметить</p>
+          <h2 id="compliments-title">Про тебя</h2>
+          <blockquote class="quote">«Ты экспонат, я твой фанат»</blockquote>
+
+          <div class="compliment-grid">
+            <article>
+              <span>01</span>
+              <h3>Ты красивая</h3>
+              <p>Теперь я знаю, что ты минимум Мисс Беляево. Остальные районы пока просто не в курсе.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>У тебя красивая осанка</h3>
+              <p>В ней есть собранность, легкость и очень заметная уверенность.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Танцы многое объясняют</h3>
+              <p>Сразу понятно, откуда эта пластика, энергия и ощущение, что ты не просто идешь, а появляешься.</p>
+            </article>
+          </div>
+
+          <form
+            class="confirm-box"
+            id="dateForm"
+            action="https://formsubmit.co/m1shelsmirnov@mail.ru"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Екатерина подтвердила свидание" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" id="nextUrl" value="" />
+            <input type="hidden" name="Выбранное место" id="chosenPlace" value="Ресторан" />
+            <input type="hidden" name="Сообщение" id="mailMessage" value="Екатерина нажала кнопку подтверждения свидания." />
+            <input type="hidden" name="Время подтверждения" id="submittedAt" value="" />
+            <input type="text" name="_honey" class="honey-field" tabindex="-1" autocomplete="off" />
+
+            <p class="choice-line">
+              Выбранный вариант: <strong id="choiceLabel">Ресторан</strong>
+            </p>
+            <button class="confirm-button" type="submit">
+              Подтверждаю поход на свидание
+            </button>
+            <p class="form-note" id="formNote">
+              После нажатия подтверждение уйдет мне на почту.
+            </p>
+          </form>
+
+          <div class="panel-actions">
+            <button class="ghost-button" type="button" data-next="#about">Назад</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js?v=10"></script>
+  </body>
+</html>
